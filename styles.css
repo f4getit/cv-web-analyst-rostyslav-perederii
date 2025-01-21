@@ -1,0 +1,154 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  background-color: #3d5a80;
+  color: white;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.sidebar .contact-details {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.sidebar .contact-details h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.sidebar .contact-details p {
+  margin: 10px 0;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar .core-skills {
+  margin-top: 65px;
+  text-align: left;
+}
+
+.sidebar .core-skills h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.sidebar .core-skills ul {
+  list-style: disc;
+  margin: 10px 20px;
+  padding: 0;
+}
+
+.sidebar .core-skills ul li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.content {
+  padding: 20px;
+  width: 70%;
+}
+
+.content h3 {
+  font-size: 20px;
+  color: #3d5a80;
+  margin-bottom: 10px;
+}
+
+.content h4 {
+  font-size: 16px;
+  color: #293241;
+  margin-bottom: 5px;
+}
+
+.content p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.content ul {
+  list-style: none;
+  margin: 10px 20px;
+}
+
+.content ul li {
+  margin: 5px 0;
+}
+
+.key-achievements {
+  margin-top: 20px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
