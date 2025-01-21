@@ -130,6 +130,9 @@ body {
   .sidebar {
     width: 100%;
   }
+  .sidebar .contact-details {
+    margin-top: 50px;
+  }
   .content {
     display: none;
   }
