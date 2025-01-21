@@ -110,8 +110,17 @@ body {
   margin: 5px 0;
 }
 
+.content ul li details summary {
+  cursor: pointer;
+}
+
 .key-achievements {
   margin-top: 20px;
+}
+
+.details-summary-switcher{
+  cursor: pointer; 
+  diplay: none; 
 }
 
 @media (max-width: 480px) {
@@ -119,16 +128,13 @@ body {
     flex-direction: row;
   }
   .sidebar {
-    width: 36%;
-  }
-  .sidebar .contact-details p {
-    font-size: 9px;
-  }
-  .sidebar .core-skills ul li {
-    font-size: 9px;
+    width: 100%;
   }
   .content {
-    width: 70%;
+    display: none;
+  }
+  .details-summary-switcher{
+    display: unset;
   }
 }
 
