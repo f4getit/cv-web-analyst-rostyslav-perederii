@@ -17,7 +17,7 @@ body {
 .sidebar {
   background-color: #3d5a80;
   color: white;
-  width: 30%;
+  width: 22%;
   padding: 20px;
   text-align: center;
 }
@@ -114,12 +114,18 @@ body {
   margin-top: 20px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 480px) {
   .container {
     flex-direction: row;
   }
   .sidebar {
-    width: 40%;
+    width: 36%;
+  }
+  .sidebar .contact-details p {
+    font-size: 9px;
+  }
+  .sidebar .core-skills ul li {
+    font-size: 9px;
   }
   .content {
     width: 70%;
