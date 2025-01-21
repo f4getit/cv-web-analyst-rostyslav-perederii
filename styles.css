@@ -114,6 +114,18 @@ body {
   margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 40%;
+  }
+  .content {
+    width: 70%;
+  }
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
