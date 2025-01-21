@@ -129,6 +129,13 @@ body {
   .sidebar {
     width: 100%;
   }
+  .content {
+  width: 100%;
+  }
+  .content ul {
+  list-style: none;
+  margin: 0px 0px;
+  } 
   .sidebar .contact-details {
     margin-top: 50px;
   }
