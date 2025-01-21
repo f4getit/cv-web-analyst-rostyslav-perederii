@@ -119,7 +119,7 @@ body {
 }
 
 .details-summary-switcher{
-  diplay: none; 
+  display: none; 
 }
 
 @media (max-width: 480px) {
