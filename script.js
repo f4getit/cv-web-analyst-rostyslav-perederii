@@ -38,3 +38,18 @@ function showSkillDescription(event) {
     var description = skillsDescriptions[skillName] || "Description not available.";
     tooltip.innerText = description;
 }
+
+function detailsSummarySwitch(event) {
+    switch (event.currentTarget.getAttribute('data-active-screen')) {
+        case 'details':
+            document.querySelector('[class=sidebar]').style.display = 'none';
+            document.querySelector('[class=content]').style.display = 'unset'
+            break;
+        case 'summary':
+            document.querySelector('[class=content]').style.display = 'none';
+            document.querySelector('[class=sidebar]').style.display = 'unset';
+            break;
+        default:
+            break;
+    }
+}
